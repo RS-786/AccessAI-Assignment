@@ -8,6 +8,7 @@ urlpatterns = [
     path("", views.index, name = 'index'),
     path("read/<int:start_from>",views.read,name='read'),
     path("create",views.create,name = 'create'),
-    path("update",views.update,name = 'update'),
+    path("update/<str:name>",views.update,name = 'update'),
     path("delete",views.delete,name = 'delete'),
+    path("search/<str:view>",views.search,name = 'search')
 ]

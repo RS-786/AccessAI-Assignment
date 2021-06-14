@@ -23,7 +23,7 @@ def name_check(name):
     return name
 
 class Employee(models.Model):
-    name = models.CharField(max_length = 64,validators=[name_check])
+    name = models.CharField(max_length = 64,validators=[name_check], unique = True)
     gender = models.CharField(choices = GENDER_CHOICES, max_length = 1)
     salary = models.IntegerField(validators=[salary_check])
     joining_date = models.DateField(auto_now = True)

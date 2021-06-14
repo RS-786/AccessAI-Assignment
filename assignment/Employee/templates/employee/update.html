@@ -196,28 +196,28 @@ input[type="checkbox"]:not(:checked) + label, input[type="checkbox"]:checked + l
 <div class="container">
 <div class = "heading" style="font-size:30px;">Please Update Employee Details :</div>
 </div>
-	<form method = "post" class = "log-form" action = "{% url 'update' %}">
+	<form method = "post" class = "log-form" action = "{{ url }}">
         {% csrf_token %}
         {{ form.name.errors }}
 	    <div class="group log-input">
-	    	Name : {{ form.name }}
+	    	Name : <input name = "name" value = "{{name}}" id = "name">
 	    </div>
         {{ form.gender.errors }}
 	    <div class="group log-input">
-	        Gender : {{ form.gender }}
+	        Gender : <input name = "gender" value = "{{gender}}" id = "gender">
 	    </div>
         {{ form.salary.errors }}
         <div class="group log-input">
-	        Salary : {{ form.salary }}
+	        Salary : <input name = "salary" value = "{{salary}}" id = "salary">
 	    </div>
         {{ form.address.errors }}
         <div class="group log-input">
-	        Address : {{ form.address }}
+	        Address : <input name = "address" value = "{{address}}" id = "address">
 	    </div>
 	    <br>
 		<div class="container-log-btn">
           <button type="submit" value="login" name = "btn_submit" class="log-form-btn">
-            <span>Add Employee</span>
+            <span>Update Employee</span>
           </button>
         </div>
 
