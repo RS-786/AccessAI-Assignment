@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>
+    Welcome to XYZ Employee Database !
+</h1>
+<br>
+<br>
+<button onclick = "location.href = 'read/0'" >
+    See Employees
+</button>
+<br>
+<button onclick = "location.href = '{% url 'create' %}'" >
+    Add Employee
+</button>
+<br>
+<button onclick = "location.href = '{% url 'update' %}'" >
+    Update Employee Information
+</button>
+<br>
+<button onclick = "location.href = '{% url 'delete' %}'" >
+    Delete Employee
+</button>
+</body>
+</html>
