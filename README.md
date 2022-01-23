@@ -1,24 +1,16 @@
-# AccessAI-Assignment
+# Employee Management System
 
-Description:
-This is a CRUD application made with Django Framework.
-Users can Create, Read, Update and Delete Employee records.
+A CRUD application built with Django Framework.
 
-Features:
--> Along with these 4 options, the application also allows users to SignUp and SignIn
--> All views other than Read require the user to be logged in
--> The Read view is paginated (max 5 employees per page)
--> For updating and deleting records, user can search the employee by name, which has been made the primary key.
+## Features
 
+### Create, Read, Update and Delete operations.
+### User Registration and Login.
+### The Read view is paginated (max 5 employees per page).
+### Employee Search using Name.
 
-How to run locally:
+## Running locally
 
-1. Clone this repository on your local machine
-2. Install django framework using pip
-3. In the project directory, open cmd and run command "python manage.py runserver"
-
-
-How To Deploy (on heroku):
-
-A complete guide can be found here : 
-https://www.geeksforgeeks.org/how-to-deploy-django-application-on-heroku/
+### Clone Project : `git clone https://github.com/Robin-07/employee-management.git`
+### Install Django framework : `pip install Django`
+### Inside Project directory : `python manage.py runserver`
